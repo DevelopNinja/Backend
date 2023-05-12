@@ -9,10 +9,8 @@ const Huni_ctrl = {
             var key = "Rank_".concat("", cat);
             var marks = "Percentage_".concat("", cat);
             var obj = {};
-            if (value[key]['gte'] != '' && value[marks]['lte'] != '') {
-                obj[key] = 1;
-                obj[marks] = -1;
-            }
+            obj[key] = 1;
+            obj[marks] = -1;
             console.log(req.query);
             console.log(obj);
             let Query = JSON.stringify(req.query);

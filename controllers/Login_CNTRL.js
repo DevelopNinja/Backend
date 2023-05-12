@@ -20,9 +20,11 @@ const Othu_ctrl = {
             data["email"] = req.query.email;
             data["rank"] = req.query.rank;
             data["rollno"] = req.query.rollno;
+            data["percentile"] = req.query.rollno;
             delete req.query.password
             delete req.query.rank
             delete req.query.rollno
+            delete req.query.percentile
             let Query = JSON.stringify(req.query);
             const exist = await Othu_Model.findOne(JSON.parse(Query));
             console.log(exist == null);
