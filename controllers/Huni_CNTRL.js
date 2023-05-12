@@ -12,12 +12,6 @@ const Huni_ctrl = {
             if (value[key]['gte'] != '' && value[marks]['lte'] != '') {
                 obj[key] = 1;
                 obj[marks] = -1;
-            } else if (value[key]['gte'] == '' && value[marks]['lte'] != '') {
-                delete req.query[key];
-                obj[marks] = -1;
-            } else {
-                delete req.query[marks];
-                obj[key] = 1;
             }
             console.log(req.query);
             console.log(obj);

@@ -16,7 +16,11 @@ const OthuSchema = new mongoose.Schema({
     rollno: {
         type: String,
         required: true,
+    },
+    percentile: {
+        type: String,
+        required: true,
     }
 })
 
-module.exports = mongoose.model('users',OthuSchema);
+module.exports = mongoose.model('users', OthuSchema);
