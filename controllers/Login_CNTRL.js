@@ -20,7 +20,7 @@ const Othu_ctrl = {
             data["email"] = req.query.email;
             data["rank"] = req.query.rank;
             data["rollno"] = req.query.rollno;
-            data["percentile"] = req.query.rollno;
+            data["percentile"] = req.query.percentile;
             delete req.query.password
             delete req.query.rank
             delete req.query.rollno

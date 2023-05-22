@@ -22,7 +22,7 @@ const Huni_ctrl = {
         } catch (err) {
             return res.status(500).json({ msg: err.message });
         }
-    }
+    },
 }
 
 module.exports = Huni_ctrl;
